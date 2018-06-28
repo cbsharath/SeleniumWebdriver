@@ -1,10 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Suite">
-  <test name="Test">
+<suite name="RegSuite">
+<listeners>
+<listener class-name="testcase.Listeners"/>
+</listeners>
+
+  <test name="TC">
     <classes>
-      <class name="testcase.demo"/>
-      <class name="testcase.demo"/>
+      <class name="testcase.Practice"/>
+      <class name="testcase.Mousehover"/>
+      <class name="testcase.Scope"/>
+      <class name="testcase.Scopr2"/>
       <class name="testcase.demo"/>
     </classes>
   </test> <!-- Test -->

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [RegSuite]">
+  <listeners>
+    <listener class-name="testcase.Listeners"/>
+  </listeners>
+  <test name="TC(failed)">
     <classes>
-      <class name="testcase.Screenshot">
+      <class name="testcase.demo">
         <methods>
-          <include name="takeScreenshots"/>
+          <include name="OpenWb"/>
         </methods>
-      </class> <!-- testcase.Screenshot -->
+      </class> <!-- testcase.demo -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- TC(failed) -->
+</suite> <!-- Failed suite [RegSuite] -->

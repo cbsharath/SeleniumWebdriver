@@ -1,6 +1,8 @@
 package testcase;
 
+import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.By;
+import org.openqa.selenium.OutputType;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -15,6 +17,9 @@ public class Cricbuzz {
 		WebDriver driver =new ChromeDriver();
 		
 		driver.get("http://www.cricbuzz.com/live-cricket-scorecard/18873/eng-vs-aus-3rd-odi-australia-tour-of-england-2018");
+		
+	    
+		
 		WebElement parent = driver.findElement(By.cssSelector("div[class='cb-col cb-col-100 cb-ltst-wgt-hdr']"));
 	int recount=	parent.findElements(By.cssSelector("div[class='cb-col cb-col-100 cb-scrd-itms']")).size();
 	int count = parent.findElements(By.cssSelector("div[class='cb-col cb-col-100 cb-scrd-itms'] div:nth-child(3)")).size();

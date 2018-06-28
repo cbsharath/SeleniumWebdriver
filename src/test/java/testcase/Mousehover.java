@@ -32,13 +32,17 @@ public class Mousehover {
 		
 	//	a.moveToElement(driver.findElement(By.xpath("//input[@id='twotabsearchtextbox']"))).click().keyDown(Keys.SHIFT).sendKeys("Hello").doubleClick().build().perform();
 		a.moveToElement(E).contextClick().build().perform();//Perform double click
-	  WebDriverWait W =new WebDriverWait(driver,20);
+	 // WebDriverWait W =new WebDriverWait(driver,20);
 	  
 	 // W.until(ExpectedConditions.elementToBeClickable(By.xpath("")));
 	  
 	  driver.close();
 	  driver.quit();
 	
+	  
+	 
+	  
+	  
 	}				
 
 }
